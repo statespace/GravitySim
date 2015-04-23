@@ -23,7 +23,6 @@ class Object:
     def placeObject(self):
         drawObject = plt.Circle(self.position, radius=self.radius, fill=False, color="black")
         plt.gca().add_patch(drawObject)
-        plt.show()
 
     def giveMotion(self, deltaV, motionDirection, time):
         if self.velocity != 0:
@@ -123,7 +122,7 @@ Craft.giveMotion(deltaV=9300.0, motionDirection=125, time=160000)
 Craft.giveMotion(deltaV=2200.0, motionDirection=90, time=40000)
 Craft.giveMotion(deltaV=200.0, motionDirection=90, time=40000)
 
-
+plt.show()
 
 
 
